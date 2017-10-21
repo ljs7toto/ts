@@ -1,5 +1,5 @@
 let num1 : number = 3;    
-num1 = "test";
+num1 = "test"; 
 let num2 : number = 5;
 
 let str1 : string = "string";
@@ -9,8 +9,8 @@ let numArr : Array<number> = [3,5,6];
 let numArr2 : number[] = [3,4,5]; //위와 같음
 //제너릭? 도 데이터 타입이다.
 
-console.log(num1);
-console.log(numArr);
+console.log(num1); //값 test
+console.log(numArr); //값 [3,5,6]
 
 let tp : [string, number];
 tp = ["1",2];
@@ -34,16 +34,16 @@ function testObject(){
 // string 
 var strTest = testObject();
 
-console.log(typeof strTest);
-console.log(strTest.charAt(1));
-console.log(strTest.length);
-console.log(strTest.substr(1)); //javascript는 재설정 재조합은 안됨 
-console.log(strTest);
+console.log(typeof strTest); //값 string
+console.log(strTest.charAt(1)); // 값 b
+console.log(strTest.length); // 값 3
+console.log(strTest.substr(1)); //javascript는 재설정 재조합은 안됨 값 bc
+console.log(strTest); //값 abc
 
 
 function testFunc(str:string, num:number):void{
-    console.log("str =" + str);
-    console.log("num =" + num);
+    console.log("str =" + str); // 값 str = 문자열
+    console.log("num =" + num); // 값 num = 330
 }
 
 testFunc("문자열",330);
@@ -71,7 +71,7 @@ let AjaxUtil = function(ti:testIter){
 
 var test1 = {str:"홍길동", num:30}
 var au = new AjaxUtil(test1);
-au.print();
+au.print(); // 값 홍길동, 30
 
 class Car{
     carName :string;
@@ -83,4 +83,4 @@ class Car{
 let hyundai = new Car("Sonata"); //constructor 와 같음 car의 메모리를 쓰고자 함 
 let pStr:string = "hyundai자동차중 제 차는 : " ;
 pStr += hyundai.carName;
-console.log(pStr);
+console.log(pStr); // 값 hyundai자동차중 제 차는 : Sonatas
