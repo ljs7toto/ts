@@ -65,8 +65,6 @@ let AjaxUtil = function(ti:testIter){
     this.print = function():void{
         console.log(ti.str);
         console.log(ti.num);
-        
-        
     }
 }
 
