@@ -83,4 +83,4 @@ class Car{
 let hyundai = new Car("Sonata"); //constructor 와 같음 car의 메모리를 쓰고자 함 
 let pStr:string = "hyundai자동차중 제 차는 : " ;
 pStr += hyundai.carName;
-console.log(pStr); // 값 hyundai자동차중 제 차는 : Sonatas
+console.log(pStr); // 값 hyundai자동차중 제 차는 : Sonatas 이다
