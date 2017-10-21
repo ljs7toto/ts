@@ -60,6 +60,7 @@ interface testIter{
     str : string;
     num : number;
 }
+
 let AjaxUtil = function(ti:testIter){
     this.print = function():void{
         console.log(ti.str);
@@ -69,9 +70,10 @@ let AjaxUtil = function(ti:testIter){
     }
 }
 
-var test1 = {str:"홍길동", num:30}
+var test1 = {str:"홍길동", num:30}  //오브젝트
 var au = new AjaxUtil(test1);
 au.print(); // 값 홍길동, 30
+
 
 class Car{
     carName :string;
